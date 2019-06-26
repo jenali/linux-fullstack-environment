@@ -27,7 +27,7 @@ function installGit()
     apt install git -y
     git config --global user.name "e.v.yolkin"
     git config --global user.email "e.v.yolkin@gmail.com"
-    git config core.fileMode false
+    git config --global core.fileMode false
 
     git --version
 }
@@ -66,5 +66,5 @@ function installNode() {
 
 function installDocker()
 {
-	sudo snap install docker -y
+	sudo snap install docker
 }
